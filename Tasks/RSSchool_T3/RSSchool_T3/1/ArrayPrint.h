@@ -15,6 +15,16 @@
 
  For all the others, it should print `unsupported`
  */
-@interface NSArray (RSSchool_Extension_Name)
+
+@interface NSArray (fooo_Name)
+
 - (NSString *)print;
+
+@end
+
+
+@interface ArrayPrint : NSObject
+
+
+
 @end

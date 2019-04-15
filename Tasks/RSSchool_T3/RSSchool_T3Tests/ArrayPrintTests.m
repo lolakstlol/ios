@@ -17,6 +17,7 @@
 - (void)test1 {
   NSArray *array = @[@[@0, @1, @2], [NSNull null], @[@"123",@"456",@"789"], @[@[@[@1337], @{@"Key": @"Value"}]]];
   NSString *output = @"[[0,1,2],null,[\"123\",\"456\",\"789\"],[[[1337],unsupported]]]";
+    NSLog(@"%@", [array print]);
   XCTAssertTrue([output isEqualToString:[array print]]);
 }
 
