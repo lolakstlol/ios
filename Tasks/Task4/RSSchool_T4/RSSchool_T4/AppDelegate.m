@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-
+#import "CustomVC.h"
 @interface AppDelegate ()
 
 @end
@@ -9,7 +9,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    CustomVC * vc = [[CustomVC alloc] init];
+    [self.window setRootViewController:vc];
+    [vc release];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
